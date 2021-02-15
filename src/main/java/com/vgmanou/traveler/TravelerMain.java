@@ -1,9 +1,11 @@
 package com.vgmanou.traveler;
 
 import com.vgmanou.traveler.init.ItemInit;
+import com.vgmanou.traveler.init.SoundInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -21,6 +23,7 @@ public class TravelerMain {
     public TravelerMain() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ItemInit.ITEMS.register(bus);
+        SoundInit.SOUNDS.register(bus);
     }
 
 

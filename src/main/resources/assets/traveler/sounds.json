@@ -1,0 +1,12 @@
+{
+  "item.delta_sound": {
+    "category": "item",
+    "subtitle": "item.delta_sound.sub",
+    "sounds": [
+      {
+        "name": "traveler:item/delta_sound",
+        "stream": true
+      }
+    ]
+  }
+}

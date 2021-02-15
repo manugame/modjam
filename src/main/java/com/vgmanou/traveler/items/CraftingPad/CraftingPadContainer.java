@@ -1,4 +1,4 @@
-package com.vgmanou.traveler.init;
+package com.vgmanou.traveler.items.CraftingPad;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;

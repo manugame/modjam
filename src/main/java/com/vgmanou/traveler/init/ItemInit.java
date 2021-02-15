@@ -1,7 +1,7 @@
 package com.vgmanou.traveler.init;
 
 import com.vgmanou.traveler.TravelerMain;
-import com.vgmanou.traveler.items.CraftingPadItem;
+import com.vgmanou.traveler.items.CraftingPad.CraftingPadItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
