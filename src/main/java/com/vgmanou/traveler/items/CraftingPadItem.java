@@ -1,6 +1,6 @@
 package com.vgmanou.traveler.items;
 
-import com.vgmanou.traveler.Init.CraftingPadContainer;
+import com.vgmanou.traveler.init.CraftingPadContainer;
 import com.vgmanou.traveler.TravelerMain;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.container.SimpleNamedContainerProvider;
@@ -16,13 +16,12 @@ import net.minecraft.world.World;
 public class CraftingPadItem extends Item {
     public CraftingPadItem() {
         super(new Item.Properties().group(TravelerMain.TAB).maxStackSize(1));
-        setRegistryName("pad");
     }
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         if (!worldIn.isRemote()) {
-            playerIn.openContainer(new SimpleNamedContainerProvider((id, playerInv, player) -> new CraftingPadContainer(id, playerInv, IWorldPosCallable.of(worldIn, player.getPosition())), new TranslationTextComponent("item.vanillatweaks.pad")));
+            playerIn.openContainer(new SimpleNamedContainerProvider((id, playerInv, player) -> new CraftingPadContainer(id, playerInv, IWorldPosCallable.of(worldIn, player.getPosition())), new TranslationTextComponent("item.traveler.crafting_pad")));
             return new ActionResult<>(ActionResultType.SUCCESS, playerIn.getHeldItem(handIn));
         }
         return new ActionResult<>(ActionResultType.SUCCESS, playerIn.getHeldItem(handIn));

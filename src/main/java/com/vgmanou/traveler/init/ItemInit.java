@@ -1,4 +1,4 @@
-package com.vgmanou.traveler.Init;
+package com.vgmanou.traveler.init;
 
 import com.vgmanou.traveler.TravelerMain;
 import com.vgmanou.traveler.items.CraftingPadItem;
