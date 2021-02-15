@@ -8,5 +8,15 @@
         "stream": true
       }
     ]
+  },
+  "item.henry_sound": {
+    "category": "item",
+    "subtitle": "item.henry_sound.sub",
+    "sounds": [
+      {
+        "name": "traveler:item/henry_sound",
+        "stream": true
+      }
+    ]
   }
 }
