@@ -1,4 +1,4 @@
-package com.vgmanou.traveler.items.delta;
+package com.vgmanou.traveler.items;
 
 import com.vgmanou.traveler.TravelerMain;
 import com.vgmanou.traveler.init.SoundInit;
